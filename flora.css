@@ -11,7 +11,7 @@ main {
     top: 0; /* AGGIUNTO: posiziona in alto */
     left: 0;
     width: 100%;
-    height: 110px; /* sistemato: prima c'era "height:110;" non valido */
+    height: 90px; /* sistemato: prima c'era "height:110;" non valido */
     padding: 10px 10px;
     z-index: 10;
     display: flex;
@@ -22,7 +22,7 @@ main {
 
 
 .logo img{
-    height: 110px;
+    height: 90px;
 }
 
 .menu{
