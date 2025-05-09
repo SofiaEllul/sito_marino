@@ -1,0 +1,94 @@
+body{
+    background: #c9f4ff;
+}
+
+main {
+    padding-top: 130px; /* aggiunto spazio per l'header fisso */
+}
+
+.header{
+    position: fixed; /* AGGIUNTO: rende l'header fisso */
+    top: 0; /* AGGIUNTO: posiziona in alto */
+    left: 0;
+    width: 100%;
+    height: 90px; /* sistemato: prima c'era "height:110;" non valido */
+    padding: 10px 10px;
+    z-index: 10;
+    display: flex;
+    background-color: #0b3553;
+    align-items: center;
+}
+
+
+.logo img{
+    height: 90px;
+}
+
+.menu{
+    display: flex;
+    gap: 20px;
+}
+/* 
+menu ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+} */
+
+menu li{
+    display: inline-block;
+}
+
+.menu li a{
+    color: white;
+    padding: 10px;
+
+}
+
+.img{
+
+    display: block;
+    margin: 30px auto;      /* centra l'immagine orizzontalmente */
+    width: 150vw;            /* 95% della larghezza dello schermo */
+    height: auto;           /* mantiene le proporzioni originali */
+    max-width: 1000px;      /* opzionale: limite massimo */
+    margin-left: 350px;
+}
+
+.dropdown {
+    position: relative;
+  }
+  
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0b3553;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 180px;
+    border: 1px solid #ffffff30;
+    z-index: 100;
+  }
+  
+  .submenu li {
+    width: 100%;
+  }
+  
+  .submenu li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .submenu li a:hover {
+    background-color: #1a4d73;
+  }
+  
+  /* Mostra submenu al passaggio del mouse */
+  .dropdown:hover .submenu {
+    display: block;
+  }
