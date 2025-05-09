@@ -46,16 +46,6 @@ menu li{
 
 }
 
-.img{
-
-    display: block;
-    margin: 30px auto;      /* centra l'immagine orizzontalmente */
-    width: 150vw;            /* 95% della larghezza dello schermo */
-    height: auto;           /* mantiene le proporzioni originali */
-    max-width: 1000px;      /* opzionale: limite massimo */
-    margin-left: 350px;
-}
-
 .dropdown {
     position: relative;
   }
