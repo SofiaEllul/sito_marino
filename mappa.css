@@ -46,9 +46,9 @@ menu li{
 }
 
 .img{
-
+    text-align: center;
     display: block;
-    margin: 30px auto;      /* centra l'immagine orizzontalmente */
+    margin: 5px auto;      /* centra l'immagine orizzontalmente */
     width: 150vw;            /* 95% della larghezza dello schermo */
     height: auto;           /* mantiene le proporzioni originali */
     max-width: 1000px;      /* opzionale: limite massimo */
