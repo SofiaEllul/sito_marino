@@ -92,3 +92,26 @@ menu li{
   .dropdown:hover .submenu {
     display: block;
   }
+
+  .contenitore__mappa{ /*serve per posizionare le puntine sull'immagine senza questo le puntine non sanno dove mettersi*/
+    position: relative; /*serve per posizionare le puntine in base al contenitore della mappa*/
+    width: 95vw;
+    max-width: 1000px;
+    margin: 30px auto;
+    }
+
+  .mappa{ /*serve per posizionare l'immagine*/
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+
+  .puntina{
+    position: absolute;
+    width: 3%;
+    aspect-ratio: 1/1;
+    transform: translate(-50%, -100%); /*serve per centrare la puntina*/
+    cursor: pointer;
+    z-index: 5;
+  }
