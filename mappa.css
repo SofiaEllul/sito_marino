@@ -52,7 +52,7 @@ menu li{
     width: 150vw;            /* 95% della larghezza dello schermo */
     height: auto;           /* mantiene le proporzioni originali */
     max-width: 1000px;      /* opzionale: limite massimo */
-    margin-left: 350px;
+    margin-left: 90px;
 }
 
 .dropdown {
