@@ -6,23 +6,60 @@ lang="en">
     <link rel="stylesheet", href="fauna.css">
 </head>
 <body>
-<header class = "header">
-    <div class = "logo">
-        <img src="fotologo.png" alt="logo">
-    </div>
-    <ul class="menu">
-        <li><a href="main.html">Home</a></li>
-        <li><a href="main.html">Home</a></li>
-        <li class="dropdown">
-          <a href="#">Curiosità</a>
-          <ul class="submenu">
-            <li><a href="fauna.html">fauna</a></li>
-            <li><a href="flora.html">flora</a></li>
-            <li><a href="barriera.html">barriera corallina</a></li>
-          </ul>
-        </li>
-        <li><a href="adotta.html">Adottare</a></li>
-    </ul>
-<header>
+  <header class = "header">
+      <div class = "logo">
+          <img src="fotologo.png" alt="logo">
+      </div>
+      <ul class="menu">
+          <li><a href="main.html">Home</a></li>
+          <li><a href="main.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Curiosità</a>
+            <ul class="submenu">
+              <li><a href="fauna.html">fauna</a></li>
+              <li><a href="flora.html">flora</a></li>
+              <li><a href="barriera.html">barriera corallina</a></li>
+            </ul>
+          </li>
+          <li><a href="adotta.html">Adottare</a></li>
+      </ul>
+    </header>
+
+  <div class="slider">
+    <img src="img/1.jpg" id="slide1" class="slider-image active" alt="slide1">
+    <img src="img/2.jpg" id="slide2" class="slider-image" alt="slide2">
+    <img src="img/3.jpg" id="slide3" class="slider-image" alt="slide3">
+    <img src="img/4.jpg" id="slide4" class="slider-image" alt="slide4">
+    <img src="img/5.jpg" id="slide5" class="slider-image" alt="slide5">
+    <img src="img/6.png" id="slide6" class="slider-image" alt="slide6">
+    <img src="img/7.jpg" id="slide7" class="slider-image" alt="slide7">
+  </div>
+<script>
+
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slider-image');
+  const totalSlides = slides.length;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active');
+      if (i === index) {
+        slide.classList.add('active');
+      }
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    showSlide(currentSlide);
+  }
+
+  setInterval(nextSlide, 3000); // Cambia immagine ogni 3 secondi
+
+
+</script>
+ 
+
+</body>
 
 </main>

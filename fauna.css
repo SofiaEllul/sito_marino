@@ -1,5 +1,7 @@
 body{
     background: #c9f4ff;
+    margin:0;
+    padding:0;
 }
 
 main {
@@ -77,3 +79,75 @@ menu li{
   .dropdown:hover .submenu {
     display: block;
   }
+
+
+.slider {
+    display: flex;
+    overflow: hidden;
+    gap: 0;
+    padding: 0;
+    scroll-behavior: auto;
+    height: 400px;
+    position: relative;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.slider-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 200px;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 0;
+
+}
+
+.slider-image.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+}
+
+
+
+  /* .slides {
+    display: flex;
+    width: 300%;    
+    height: 100%;
+    animation: slide 12s infinite;
+  }
+  
+  .slide {
+    width: 100%;
+    flex-shrink: 0;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 3000;
+  } */
+  
+  /* @keyframes slide {
+    0%    { transform: translateX(0); }
+    33%   { transform: translateX(0); }
+  
+    36%   { transform: translateX(-100%); }
+    66%   { transform: translateX(-100%); }
+  
+    69%   { transform: translateX(-200%); }
+    99%   { transform: translateX(-200%); }
+  
+    100%  { transform: translateX(0); }
+  } */
