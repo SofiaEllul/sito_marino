@@ -91,7 +91,7 @@ menu li{
   box-sizing: border-box;  
 }
 .reverse {
-  flex-direction: row-reverse;
+  flex-direction: row-reverse; 
 }
 
 .slider {
