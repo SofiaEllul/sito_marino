@@ -102,32 +102,30 @@
     </section>
 
     <script>
-    // Funzione per gestire l'animazione degli elementi visibili
+    
     document.addEventListener('DOMContentLoaded', function () {
-        // Selezioniamo tutti gli elementi con la classe hidden-scroll
+
         const elements = document.querySelectorAll('.hidden-scroll');
 
-        // Configuriamo le opzioni dell'IntersectionObserver
         const observerOptions = {
-            root: null, // Monitoriamo la viewport
-            threshold: 0.1 // Quando il 10% dell'elemento è visibile
+            root: null,
+            threshold: 0.1 
         };
 
-        // Funzione callback che viene chiamata quando un elemento entra nel viewport
+        
         const observerCallback = (entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    // Aggiungiamo la classe "visible" quando l'elemento è visibile
+
                     entry.target.classList.add('visible');
-                    observer.unobserve(entry.target); // Una volta che è visibile, smettiamo di osservare
+                    observer.unobserve(entry.target); 
                 }
             });
         };
 
-        // Creiamo un nuovo IntersectionObserver con la nostra callback e opzioni
         const observer = new IntersectionObserver(observerCallback, observerOptions);
 
-        // Iniziamo a osservare ogni elemento con la classe "hidden-scroll"
+        
         elements.forEach(element => {
             observer.observe(element);
         });
