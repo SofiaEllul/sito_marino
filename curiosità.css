@@ -116,7 +116,7 @@ menu li{
 }
 
 .reverse {
-  flex-direction: row-reverse;
+  flex-direction: row-reverse; 
 }
 
 .slider-image.active {
