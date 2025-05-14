@@ -127,3 +127,13 @@ menu li{
   justify-content: center;
 }
 
+.hidden-scroll{
+  opacity: 0;
+  transition: all 5.0s ease;
+  transform: translateY(40px);
+}
+
+.hidden-scroll.visible{
+  opacity: 1;
+  transform: translateY(0);
+}
