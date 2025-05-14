@@ -77,3 +77,26 @@ menu li{
   .dropdown:hover .submenu {
     display: block;
   }
+
+
+  .foto-ok {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100vw;     /* 100% larghezza dello schermo */
+    padding: 0 20px;       /* nessun padding interno */
+    margin: 40px 0;
+    box-sizing: border-box;  
+  }
+  .reverse {
+    flex-direction: row-reverse; 
+  }
+  
+
+  .text {
+    max-width: 400px;
+    font-size: 1.2rem;
+    color: #0b3553;
+    margin: 40px;
+  }

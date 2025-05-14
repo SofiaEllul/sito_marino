@@ -91,13 +91,15 @@ menu li{
     position: relative; 
     width: 95vw;
     max-width: 1000px;
-    margin: 30px auto;
+    margin: 30px auto;  
+    border: 5px solid #1a4d73;
     }
 
   .mappa{ 
     width: 100%;
     height: auto;
     display: block;
+  
   }
 
 
@@ -108,4 +110,9 @@ menu li{
     transform: translate(-50%, -100%); 
     cursor: pointer;
     z-index: 5;
+  }
+
+  .testo {
+    text-align: center;
+    font-size: 35;
   }
