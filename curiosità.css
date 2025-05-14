@@ -101,6 +101,7 @@ menu li{
   border-radius: 10px;
   overflow: hidden;
   flex-shrink: 0;
+  margin: 40px;
 }
 
 .slider-image {
@@ -124,4 +125,5 @@ menu li{
   max-width: 400px;
   font-size: 1.2rem;
   color: #0b3553;
+  margin: 40px;
 }
