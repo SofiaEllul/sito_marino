@@ -82,14 +82,13 @@ menu li{
 
 
 .slider {
-    position: relative;
+    position:relative;
     width:100%;
-    max-width:  800px;
+    max-width:  700px;
     height: 500px;
-    margin: 100px auto 0;
+    margin: 10;
     border-radius: 10px;
     overflow: hidden;
-    border-radius:10px;
 }
 
 .slider-image{
@@ -103,6 +102,21 @@ menu li{
     transition: opacity 0.5s ease-in-out;
     z-index: 0;
 
+}
+
+.slider-ok {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 20px;
+  flex-direction: row;
+}
+
+.reverse {
+  flex-direction: row-reverse;
 }
 
 .slider-image.active {
