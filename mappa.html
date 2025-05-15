@@ -71,5 +71,41 @@
         </a>
     </div>
 
-
 </main>
+
+<footer>
+    <div class = "logo2">
+        <img src="fotologo.png" alt="logo">
+    </div>
+    <div class="social">
+        <img src="WhatsApp.webp" alt="">
+        <img src="facebook.jpg" alt="" class="facebook">
+        <img src="instagram.png" alt="">
+    </div>
+    <div class="testo-footer">
+    </div>
+
+    
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const header = document.getElementById('header');  
+        const footer = document.querySelector('footer'); 
+
+        function checkFooterVisibility() {
+            const footerPosition = footer.getBoundingClientRect().top; 
+            const windowHeight = window.innerHeight; 
+
+            if (footerPosition <= windowHeight) {
+                header.classList.add('hidden'); 
+            } else {
+                header.classList.remove('hidden'); 
+            }
+        }
+
+        window.addEventListener('scroll', checkFooterVisibility);
+
+        checkFooterVisibility();
+    });
+</script>

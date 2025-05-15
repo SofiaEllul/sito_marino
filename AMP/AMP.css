@@ -100,3 +100,46 @@ menu li{
     color: #0b3553;
     margin: 40px;
   }
+
+  footer {
+    padding: 30;
+    margin: auto;
+    display: block;
+    height: 220px;
+    background-color: #0b3553;
+  }
+
+  .logo2 {
+    margin: auto;
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .logo2 img {
+    height: 100px;
+  }
+  
+  .social {
+    padding-top: 25px;
+    margin: auto;
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .social img{
+    height: 50px;
+    margin: 15px;
+  }
+  
+  .facebook {
+    border-radius: 50px;
+  }
+  
+  #header {
+    transition: opacity 0.5s ease; 
+  }
+  
+  .hidden {
+    opacity: 0; 
+    pointer-events: none; 
+  }
