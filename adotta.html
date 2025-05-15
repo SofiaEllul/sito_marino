@@ -1,86 +1,88 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>under the sea</title>
-    <link rel="stylesheet", href="adotta.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Under the Sea - Shaka</title>
+  <link rel="stylesheet" href="adotta.css" />
 </head>
 <body>
-    <header class = "header">
-        <div class = "logo">
-            <img src="fotologo.png" alt="logo">
-        </div>
-        <ul class="menu">
-            <li><a href="main.html">Home</a></li>
-            <li><a href="mappa.html">Mappa</a></li>
-            <li class="dropdown">
-            <a href="#">Curiosità</a>
-            <ul class="submenu">
-                <li><a href="fauna.html">fauna</a></li>
-                <li><a href="flora.html">flora</a></li>
-                <li><a href="barriera.html">barriera corallina</a></li>
-            </ul>
-            </li>
-            <li><a href="adotta.html">Adottare</a></li>
+  <header class="header" id="header">
+    <div class="logo">
+      <img src="fotologo.png" alt="logo" />
+    </div>
+    <ul class="menu">
+      <li><a href="main.html">Home</a></li>
+      <li><a href="mappa.html">Mappa</a></li>
+      <li class="dropdown">
+        <a href="#">Curiosità</a>
+        <ul class="submenu">
+          <li><a href="fauna.html">Fauna</a></li>
+          <li><a href="flora.html">Flora</a></li>
+          <li><a href="barriera.html">Barriera corallina</a></li>
         </ul>
-    <header>
+      </li>
+      <li><a href="adotta.html">Adottare</a></li>
+    </ul>
+  </header>
 
-<h2><strong>Preservare il mare significa proteggere la vita, anche quella sulla terraferma. Inizia il tuo viaggio tra le meraviglie custodite sotto la superficie!</strong></h2>
-<body>
+  <h2><strong>Preservare il mare significa proteggere la vita, anche quella sulla terraferma. Inizia il tuo viaggio tra le meraviglie custodite sotto la superficie!</strong></h2>
+
   <div class="container">
-    <!-- Immagine principale -->
-    <img src="inserisci-la-tua-immagine.jpg" alt="Immagine dell'area protetta" class="main-image">
+    <img src="Shaka_2.webp" alt="Immagine di Shaka, lo squalo tigre" class="main-image" />
 
-    <!-- Descrizione -->
     <div class="description">
-      <p>
-        <!-- Inserisci qui la tua descrizione -->
-        Questa è una breve descrizione dell'area protetta che puoi personalizzare con il testo che preferisci. Parla delle caratteristiche, della biodiversità e dell'importanza della zona.
-      </p>
+      <h3>Saluta Shaka</h3>
+      <p>Le femmine di squalo tigre, soprattutto quelle in fase pre-adulta, sono creature marine straordinarie. Questi squali, generalmente di medie dimensioni in questa fase del loro sviluppo, trovano spesso habitat ricchi di cibo vicino alle coste, come quelle dell'Australia settentrionale nei pressi di Port Douglas.</p>
+      <p>Questi ambienti marini, ricchi di prede, consentono agli squali come Shaka di vivere pacificamente e prosperare. La possibilità di una futura migrazione rende lo studio di questi squali particolarmente interessante, poiché può fornire informazioni preziose sui loro comportamenti migratori e sulle loro abitudini alimentari.</p>
+      <p>Gli squali tigre svolgono un ruolo cruciale nell'equilibrio degli ecosistemi marini e il loro studio contribuisce a una migliore comprensione delle dinamiche di questi ecosistemi. Monitorare il loro comportamento e i loro spostamenti è essenziale per la conservazione e la gestione delle popolazioni di squali negli oceani.</p>
+      <ul>
+        <li><strong>Specie:</strong> Squalo tigre</li>
+        <li><strong>Genere:</strong> Femmina</li>
+        <li><strong>Dimensioni:</strong> >2 metri</li>
+        <li><strong>Nome:</strong> Shaka</li>
+      </ul>
+      <h2>Adotta una specie a rischio</h2>
+      <p>Circa un milione di specie animali è a rischio estinzione: un numero drammatico e preoccupante se pensiamo che il nostro benessere dipende soprattutto da loro. Abbiamo bisogno di te per proteggere questa straordinaria fonte di vita. Con piccoli gesti, insieme, possiamo raggiungere i più grandi risultati</p>
     </div>
 
-    <!-- Bottone e spiegazione -->
     <div class="action-section">
-      <a href="inserisci-il-tuo-link.html" target="_blank">Scopri di più</a>
-      <p>Premi questo pulsante per visitare il sito ufficiale dell'area o per approfondire le informazioni.</p>
+      <a href="https://clubocean.co/it-it" target="_blank">Scopri di più</a>
+      <p>Premi questo pulsante per visitare il sito ufficiale di conservazione degli squali e approfondire le informazioni sull'adozione e il tracciamento degli animali.</p>
     </div>
   </div>
-</body>
-</html>
 
-<footer>
-  <div class = "logo2">
-      <img src="fotologo.png" alt="logo">
-  </div>
-  <div class="social">
-      <img src="WhatsApp.webp" alt="">
-      <img src="facebook.jpg" alt="" class="facebook">
-      <img src="instagram.png" alt="">
-  </div>
-  <div class="testo-footer">
-  </div>
+  <footer>
+    <div class="logo2">
+      <img src="fotologo.png" alt="logo" />
+    </div>
+    <div class="social">
+      <img src="WhatsApp.webp" alt="WhatsApp" />
+      <img src="facebook.jpg" alt="Facebook" class="facebook" />
+      <img src="instagram.png" alt="Instagram" />
+    </div>
+    <div class="testo-footer"></div>
+  </footer>
 
-  
-</footer>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-      const header = document.getElementById('header');  
-      const footer = document.querySelector('footer'); 
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const header = document.getElementById('header');
+      const footer = document.querySelector('footer');
 
       function checkFooterVisibility() {
-          const footerPosition = footer.getBoundingClientRect().top; 
-          const windowHeight = window.innerHeight; 
+        const footerPosition = footer.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
 
-          if (footerPosition <= windowHeight) {
-              header.classList.add('hidden'); 
-          } else {
-              header.classList.remove('hidden'); 
-          }
+        if (footerPosition <= windowHeight) {
+          header.classList.add('hidden');
+        } else {
+          header.classList.remove('hidden');
+        }
       }
 
       window.addEventListener('scroll', checkFooterVisibility);
-
       checkFooterVisibility();
-  });
-</script>
+    });
+  </script>
+</body>
+</html>
