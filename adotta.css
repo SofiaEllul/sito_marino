@@ -184,3 +184,14 @@ footer {
   }
 }
 
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    font-size: 14px;
+  }
+}
