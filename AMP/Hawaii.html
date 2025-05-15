@@ -24,7 +24,122 @@
         <li><a href="../adotta.html">Adottare</a></li>
     </ul>
 </div>
-
 <main>
+  <!-- Introduzione -->
+  <div class="foto-ok">
+    <div class="text">
+      <h2>Area Marina Protetta di Papahānaumokuākea</h2>
+      <p>
+        Situata a nord-ovest dell’arcipelago hawaiano, Papahānaumokuākea è una delle più grandi aree marine protette del mondo. Istituita nel 2006 e ampliata nel 2016, copre oltre <strong>1,5 milioni di km²</strong> tra barriere coralline, atolli, montagne sottomarine e profondi ecosistemi oceanici.
+      </p>
+      <p>
+        È un luogo di enorme valore ecologico, ma anche culturale e spirituale per il popolo hawaiano, da cui prende il nome. Nel 2010 è stata dichiarata <strong>Patrimonio Mondiale dell’Umanità</strong> dall’UNESCO.
+      </p>
+    </div>
+    <img src="imghawaii1.jpg" alt="Mappa Papahānaumokuākea (aggiungi immagine)" style="max-width: 500px; border-radius: 15px;">
+  </div>
+
+  <!-- Significato culturale -->
+  <div class="foto-ok reverse">
+    <div class="text">
+      <h3>Una riserva sacra per gli hawaiani</h3>
+      <p>
+        Il nome "Papahānaumokuākea" unisce due divinità ancestrali: <strong>Papahānaumoku</strong> (madre terra) e <strong>Wākea</strong> (padre cielo). L’area è considerata sacra e rappresenta il luogo di origine e ritorno dello spirito dopo la morte, secondo la cosmologia hawaiana.
+      </p>
+      <p>
+        Protegge anche importanti <strong>siti archeologici e culturali</strong>, legati alla navigazione polinesiana e alla storia indigena.
+      </p>
+    </div>
+    <img src="imghawaii2.jpg" alt="Cultura hawaiana sacra (aggiungi immagine)" style="max-width: 500px; border-radius: 15px;">
+  </div>
+
+  <!-- Biodiversità -->
+  <div class="foto-ok">
+    <div class="text">
+      <h3>Un ecosistema unico al mondo</h3>
+      <p>
+        L’area ospita oltre <strong>7.000 specie marine</strong>, di cui circa il 25% endemiche. I suoi habitat comprendono lagune, scogliere, piane abissali e vulcani sottomarini, molti dei quali ancora inesplorati.
+      </p>
+      <p>
+        Tra le specie più importanti:
+      </p>
+      <ul>
+        <li>La <strong>foca monaca hawaiana</strong>, in pericolo critico di estinzione</li>
+        <li>La <strong>tartaruga verde</strong> (honu), sacra per la cultura locale</li>
+        <li>Pesci tropicali colorati, coralli antichissimi e squali pelagici</li>
+        <li>Uccelli marini come l’<strong>albatro di Laysan</strong> e il <strong>tern di mare</strong></li>
+      </ul>
+    </div>
+    <img src="imghawaii3.jpg" alt="Fauna marina hawaiana (aggiungi immagine)" style="max-width: 500px; border-radius: 15px;">
+  </div>
+
+  <!-- Conservazione -->
+  <div class="foto-ok reverse">
+    <div class="text">
+      <h3>Protezione totale e ricerca scientifica</h3>
+      <p>
+        In tutta l’area sono vietate attività industriali, pesca commerciale, trivellazioni ed estrazioni. Solo poche persone possono accedervi per fini scientifici o culturali, con permessi speciali.
+      </p>
+      <p>
+        Il monumento è gestito da un partenariato tra enti statali, federali, scienziati e rappresentanti delle comunità native hawaiane, diventando un <strong>modello globale di conservazione collaborativa</strong>.
+      </p>
+    </div>
+    <img src="imghawaii4.jpg" alt="Ricerca scientifica nelle Hawaii (aggiungi immagine)" style="max-width: 500px; border-radius: 15px;">
+  </div>
+
+  <!-- Curiosità -->
+  <div class="foto-ok">
+    <div class="text">
+      <h3>Lo sapevi che...?</h3>
+      <ul>
+        <li>È più grande di tutti i parchi nazionali degli Stati Uniti messi insieme</li>
+        <li>La <strong>foca monaca hawaiana</strong> è una delle uniche foche tropicali del mondo</li>
+        <li>Alcuni coralli della zona hanno oltre <strong>4.000 anni</strong></li>
+        <li>L’area contiene almeno <strong>3 vulcani sottomarini attivi</strong></li>
+        <li>Molti luoghi non sono mai stati toccati dall’uomo moderno</li>
+      </ul>
+    </div>
+    <img src="imghawaii5.jpg" alt="Curiosità su Papahānaumokuākea (aggiungi immagine)" style="max-width: 500px; border-radius: 15px;">
+  </div>
 </main>
+
+
+<footer>
+    <div class = "logo2">
+        <img src="../fotologo.png" alt="logo">
+    </div>
+    <div class="social">
+        <img src="..\WhatsApp.webp" alt="">
+        <img src="..\facebook.jpg" alt="" class="facebook">
+        <img src="..\instagram.png" alt="">
+    </div>
+    <div class="testo-footer">
+    </div>
+
+    
+</footer>
+
+
+
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const header = document.getElementById('header');  
+        const footer = document.querySelector('footer'); 
+
+        function checkFooterVisibility() {
+            const footerPosition = footer.getBoundingClientRect().top; 
+            const windowHeight = window.innerHeight; 
+
+            if (footerPosition <= windowHeight) {
+                header.classList.add('hidden'); 
+            } else {
+                header.classList.remove('hidden'); 
+            }
+        }
+
+        window.addEventListener('scroll', checkFooterVisibility);
+
+        checkFooterVisibility();
+    });
+</script>

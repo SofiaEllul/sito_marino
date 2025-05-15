@@ -1,5 +1,10 @@
 body{
-    background: #c9f4ff;
+    background: #c9f4ff;  
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5faff;
+    color: #333;
 }
 
 main {
@@ -121,4 +126,49 @@ menu li{
   .hidden {
     opacity: 0; 
     pointer-events: none; 
+  }
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  .main-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .description {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  .action-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e0f0ff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex-wrap: wrap;
+  }
+  .action-section p {
+    flex: 1;
+    margin: 0 1rem;
+    text-align: left;
+  }
+  .action-section a {
+    text-decoration: none;
+    background-color: #007acc;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  .action-section a:hover {
+    background-color: #005fa3;
   }

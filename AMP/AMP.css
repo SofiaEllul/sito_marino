@@ -143,3 +143,19 @@ menu li{
     opacity: 0; 
     pointer-events: none; 
   }
+
+.text h3 {
+  color: #0b3553;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.text ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.text ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
